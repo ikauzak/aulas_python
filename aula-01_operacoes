@@ -1,0 +1,45 @@
+Python 3.7.2 (default, Dec 26 2018, 08:50:25) 
+[GCC 6.4.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> 1
+1
+
+##A soma em python é feita de forma simples. Apenas usando sinais da aritimética
+>>> 1+1
+2
+>>> 2-2
+0
+>>> 3*3
+9
+>>> 
+>>> 3/2
+1.5
+
+##Para fazer exponenciação (no caso do exemplo é o 3 elevado ao quadrado)
+>>> 3**2
+9
+>>>
+
+##Para tirar raíz quadrada de um número, use o ** e 0.5
+>>> 100**0.5
+10.0
+
+##Equações tb são respeitadas as ordens para multiplicação, divisão e depois soma e subtração
+>>> 10 * 5 + 10 * 2
+70
+
+##Podemos mudar a prioridade da mesma forma que fazemos na matemática utilizando parenteses
+>>> 10 * (5 + 10) * 2
+300
+
+##Alguns tipos de classes (inteiros e flutuantes)
+##Inteiros são números inteiros e flutuantes são números com vírgulas
+##Podemos identificar a classe simplesmente utilizando a expressão type
+>>> type(2)
+<class 'int'>
+>>> type(2.2)
+<class 'float'>
+>>> 
+>>> type(3/2)
+<class 'float'>
+>>> 

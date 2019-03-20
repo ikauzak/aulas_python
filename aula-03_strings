@@ -1,0 +1,110 @@
+##A função "print" serve para imprimir na tela alguma expressão
+>>> print ('Olá mundo')
+Olá mundo
+
+##Usando o \n no meio do print, criará uma nova linha na hora de imprimir
+>>> print ('Olá mundo \n Esta é uma nova linha')
+Olá mundo 
+ Esta é uma nova linha
+
+##Usando o \t, é dado um espaço (tab) entre uma palavra e outra
+>>> print ('Olá mundo \tEsta é uma nova linha')
+Olá mundo 	Esta é uma nova linha
+
+##A função "len" conta quantos carácteres há na expressão
+>>> len ('Olá mundo Esta é uma nova linha')
+31
+
+##Tb é possível associar numa variável
+>>> s = 'Olá mundo Esta é uma nova linha'
+
+##Saber o seu tipo
+>>> type(s)
+<class 'str'>
+
+##Imprimir em tela
+>>> print (s)
+Olá mundo Esta é uma nova linha
+
+##O índice serve para imprimir um elemento específico de uma variável, por exememplo na função len foi contada cada elemento de dentro da variável s, onde temos 31 carácteres.
+##Usando o índice [:] traz todas os elementos.
+>>> s[:]
+'Olá mundo Esta é uma nova linha'
+>>>
+
+##Imprimir elementos isolados
+##O número dentro do [] vai imprimir o elemento que ocupa aquela ordem, por exemplo o primeiro elemento da variável s é a letra 'O', a segunda é o 'l' e assim por diante.
+>>> s[1]
+'l'
+>>> s[0]
+'O'
+>>> s[3]
+' '
+>>> s[2]
+'á'
+
+##Neste exemplo, estamos imprimindo somente do 4 elemento pra frente, devido ao número 4 antes dos : dentro do []
+>>> s[4:]
+'mundo Esta é uma nova linha'
+
+##Aqui estamos imprimindo na tela todos os elementos que estão a partir do 4 elemento até o 9.
+>>> s[4:9]
+'mundo'
+
+##Aqui podemos imprimir os últimos elementos, utilizando o '-' para contar de traz para frente
+>>> s[-1]
+'a'
+>>> s[-2]
+'h'
+>>> s[-5]
+'l'
+
+##Podemos imprimir na tela todo o conteúdo, menos os últimos 5 elementos da variável
+>>> s[:-5]
+'Olá mundo Esta é uma nova '
+
+##Ou podemos imprimir somente os 5 últimos elementos
+>>> s[-5:]
+'linha'
+
+##Usando :: dentro de [], imprimi a frequência solicitada.
+##Por padrão, o :: já vem com o valor definido 1
+>>> s[::]
+'Olá mundo Esta é uma nova linha'
+
+##Se utilizar o 2, será impresso na tela somente os carácteres contados de 2 em 2 (0, 2, 4, 6..)
+>>> s[::2]
+'OámnoEt  m oalna'
+
+##Se utilizar o -1, a impressão sairá invertida.
+>>> s[::-1]
+'ahnil avon amu é atsE odnum álO'
+
+##É possível concatenar strings
+>>> s + ' teste'
+'Olá mundo Esta é uma nova linha teste'
+
+##Aqui estamos atribuíndo novos valores na variável s
+>>> s = s + ' Teste'
+  >>> s
+'Olá mundo Esta é uma nova linha Teste'
+
+>>> letra = 'g'
+>>> 
+>>> letra * 10
+'gggggggggg'
+
+##Acessando o método lower dentro da variável s. Ou seja, todos os elementos ficam lower case.
+>>> s.lower()
+'olá mundo esta é uma nova linha teste'
+
+##Mas o conteúdo original não é alterado
+>>> s
+'Olá mundo Esta é uma nova linha Teste'
+
+##O split cria uma lista com os elementos
+>>> s.split()
+['Olá', 'mundo', 'Esta', 'é', 'uma', 'nova', 'linha', 'Teste']
+>>> 
+>>> s.split( )
+['Olá', 'mundo', 'Esta', 'é', 'uma', 'nova', 'linha', 'Teste']
