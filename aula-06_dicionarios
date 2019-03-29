@@ -1,0 +1,83 @@
+##Criar dicionários
+>>> my_dict={'chave1': 'valor 1', 'chave2': 1}
+>>> my_dict
+{'chave1': 'valor 1', 'chave2': 1}
+>>> 
+>>> type(my_dict)
+<class 'dict'>
+>>>
+##É possível extrair qualquer elemento de dentro do dicionário
+>>> my_dict['chave2']
+1
+>>> 
+>>> my_dict['chave1']
+'valor 1'
+
+##Assim como utilizar métodos ou extrair elementos de um item
+>>> my_dict['chave1'].upper()
+'VALOR 1'
+>>> 
+>>> my_dict['chave1'][1:]
+'alor 1'
+>>> my_dict['chave1'][:]
+'valor 1'
+>>> my_dict['chave1'][:1]
+'v'
+>>> 
+
+##Também é possível colocar uma lista dentro de um dicionário
+>>> my_dict={'chave1': 'valor 1', 'chave2': 1, 'chave':[1, 2, [1, 2, 3]]}
+>>>
+##Extrair informações de um dicionário
+>>> my_dict['chave']
+[1, 2, [1, 2, 3]]
+>>> 
+>>> my_dict['chave'][2]
+[1, 2, 3]
+>>> 
+>>> my_dict['chave'][1]
+2
+>>> 
+>>> my_dict['chave'][0]
+1
+##Extraindo um dado de dentro de uma lista que está dentro de um dicionário
+>>> my_dict['chave'][2][1]
+2
+>>> 
+##O dicionário também é mutável
+>>> my_dict['chave']=123
+>>>
+>>> my_dict['chave']
+123
+##Um dicionário dentro de um dicionário (chave3)
+>>> my_dict={'chave1': 'valor 1', 'chave2': 1, 'chave':[1, 2, [1, 2, 3]], 'chave3':{'key1': 'olá'}}
+>>> 
+>>> my_dict['chave3']
+{'key1': 'olá'}
+>>> 
+
+
+##Criando um dicionário vazio
+>>> d = {}
+>>> 
+>>> d['key1'] = 'Dog'
+>>> 
+>>> d
+{'key1': 'Dog'}
+>>> 
+>>> d['key2'] = 'Outro_dog'
+>>> 
+>>> d
+{'key1': 'Dog', 'key2': 'Outro_dog'}
+
+##Método para listar somente as chaves de um dicionário
+>>> my_dict.keys()
+dict_keys(['chave1', 'chave2', 'chave', 'chave3'])
+
+##Método para listar os valores de cada chave
+>>> my_dict.values()
+dict_values(['valor 1', 1, [1, 2, [1, 2, 3]], {'key1': 'olá'}])
+
+##Itens estruturados dentro das chaves
+>>> my_dict.items()
+dict_items([('chave1', 'valor 1'), ('chave2', 1), ('chave', [1, 2, [1, 2, 3]]), ('chave3', {'key1': 'olá'})])

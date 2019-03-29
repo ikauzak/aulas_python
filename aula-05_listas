@@ -1,0 +1,136 @@
+##Criação de listas
+>>> my_list=[1, 2, 3]
+>>> 
+>>> my_list
+[1, 2, 3]
+>>> 
+>>> my_list2=[1, 2, 2.3, 'string']
+>>> 
+>>> my_list2
+[1, 2, 2.3, 'string']
+>>> 
+##Aqui podemos imprimir em ordem os itens que estão dentro da lista, conforme visto na aula de strings.
+>>> my_list2[0]
+1
+>>> 
+>>> my_list2[1]
+2
+>>> my_list2[3]
+'string'
+>>> my_list2[2]
+2.3
+>>> my_list2[1:]
+[2, 2.3, 'string']
+>>> 
+>>> my_list2[:3]
+[1, 2, 2.3]
+>>> 
+>>> my_list2[:]
+[1, 2, 2.3, 'string']
+>>> my_list2[-1]
+'string'
+>>>
+##Aqui podemos somar as duas listas.
+>>> my_list + my_list2
+[1, 2, 3, 1, 2, 2.3, 'string']
+>>>
+##Porém seus valores permanecem intactos
+>>> my_list
+[1, 2, 3]
+>>> 
+>>> my_list2
+[1, 2, 2.3, 'string']
+>>>
+##Para adicionar valores temporários nas listas
+>>> my_list2 + ['adição permanente']
+[1, 2, 2.3, 'string', 'adição permanente']
+>>> 
+>>> my_list2
+[1, 2, 2.3, 'string']
+>>>
+##Para adicionar valores permanentementes na lista deve-se reatribuir o valor na mesma variável.
+>>> my_list2 = my_list2 + ['adição permanente']
+>>> 
+>>> my_list2
+[1, 2, 2.3, 'string', 'adição permanente']
+>>>
+##Outra forma de adicionar itens numa lista é utilizando o método .append.
+>>> my_list2.append('mais um')
+>>> 
+>>> 
+>>> my_list2
+[1, 2, 2.3, 'string', 'adição permanente', 'mais um']
+
+##É possível remover itens da lista utilizando o método .pop. Por padrão, o método .pop remove o último item da lista.
+>>> my_list2.pop()
+'mais um'
+>>> 
+>>> my_list2
+[1, 2, 2.3, 'string', 'adição permanente']
+>>> 
+##Ou passando o índice da lista para que seja removido. Neste exemplo eu removi o primeiro item da lista.
+>>> my_list2.pop(0)
+1
+>>> 
+>>> my_list2
+[2, 2.3, 'string', 'adição permanente']
+
+##Outra forma interessante de se utilizar o .pop é atribuir um item que foi removido de uma lista em uma outra váriavel.
+>>> var = my_list2.pop(1)
+>>> 
+>>> var
+2.3
+>>> my_list2
+[2, 'string', 'adição permanente']
+>>> 
+
+
+##Também é possível multiplicar quantas vezes a lista será exibida.
+>>> my_list2 *3
+[1, 2, 2.3, 'string', 'adição permanente', 1, 2, 2.3, 'string', 'adição permanente', 1, 2, 2.3, 'string', 'adição permanente']
+>>>
+##Podemos contar quantos itens há dentro de uma lista utilizando o len
+>>> len(my_list)
+3
+>>> 
+>>> len(my_list2)
+5
+
+##O método .reverse reordena os itens da lista ao contrário
+>>> new_list = ['c', 'e', 'x', 'b', 'a']
+>>> 
+>>> 
+>>> new_list.reverse()
+>>> 
+>>> new_list
+['a', 'b', 'x', 'e', 'c']
+##O .sort organiza os itens em forma alfabética ou em números crescentes.
+>>> new_list.sort()
+>>> 
+>>> new_list
+['a', 'b', 'c', 'e', 'x']
+
+##Criando matriz de listas
+>>> lst1=[1, 2, 3]
+>>> lst2=[4, 5, 6]
+>>> lst3=[7, 8, 9]
+>>> 
+>>> matrix = [lst1, lst2, lst3]
+>>>
+##Aqui estão listadas as 3 listas numa só variável.
+>>> matrix
+[[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+>>>
+##Aqui está listada apenas a segunda lista (lembrando que no python, o primeiro item é o 0)
+>>> matrix[1]
+[4, 5, 6]
+>>>
+##Aqui está listado apenas o segundo item da segunda lista
+>>> matrix[1][1]
+5
+
+##Aqui estamos criando uma nova variável que está pegando o primeiro valor de cada linha da matrix. Ou seja, ele vai listar as 3 listas como se fossem linhas e colunas, e pegar o primeiro valor de cada linha row[0] for row in matrix.
+>>> first_col= [row[0] for row in matrix]
+>>> 
+>>> first_col
+[1, 4, 7]

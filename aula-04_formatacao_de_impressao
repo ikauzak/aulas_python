@@ -1,0 +1,38 @@
+>>> print('this is a string')
+this is a string
+>>> s = 'string'
+>>> 
+>>> print ('temos uma %s auxiliar.')
+temos uma %s auxiliar.
+>>> 
+>>> print ('temos uma %s auxiliar.' %(s))
+temos uma string auxiliar.
+>>> 
+>>> s = 123
+>>> print ('temos uma %s auxiliar.' %(s))
+temos uma 123 auxiliar.
+>>>
+##Aqui podemos formatar a saída de um flutuante
+>>> print ('printando pontos flutuantes: %1.2f' %(13.144))
+printando pontos flutuantes: 13.14
+>>> 
+>>> print ('printando pontos flutuantes: %1.5f' %(13.144))
+printando pontos flutuantes: 13.14400
+>>> 
+>>> print ('printando pontos flutuantes: %1.0f' %(13.144))
+printando pontos flutuantes: 13
+>>> 
+>>> print ('printando pontos flutuantes: %11.5f' %(13.144))
+printando pontos flutuantes:    13.14400
+>>>
+##Aqui podemos utilizar duas variáveis diferentes no mesmo print.
+>>> a1='string'
+>>> a2 = 1234
+>>> print ('Temos uma %s aqui. Temos um inteiro aqui: %r' %(a1, a2))
+Temos uma string aqui. Temos um inteiro aqui: 1234
+>>>
+##Aqui podemos substituir os 3 valores.
+>>> a1 = 'One: {a}, Two {b}, Three{c}' .format(a=1, b='two', c=12.3)
+>>> 
+>>> print (a1)
+One: 1, Two two, Three12.3
