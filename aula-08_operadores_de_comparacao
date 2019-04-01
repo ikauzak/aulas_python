@@ -1,0 +1,35 @@
+##Alguns exemplos de comparação
+>>> 22 == 22
+True
+>>> 
+>>> 21 == 22
+False
+>>> 
+>>> 2 != 1
+True
+>>> 2 <= 4
+True
+>>> 
+>>> 2 >= 2
+True
+
+##Comparação em cadeia
+
+>>> a = 1
+>>> b = 2
+>>> c = 1
+>>> 
+##O operador 'and'retorna verdadeiro somente se todas as expressões forem verdadeiras.
+>>> a == c and b == 2
+True
+>>> 
+>>> a == c and b == 1
+False
+>>> 
+>>>
+##O operador 'or' retorna verdadeiro se umas das operações for verdadeira.
+>>> a == 1 or b == 1
+True
+>>> 
+>>> a == 2 or b == 1
+False

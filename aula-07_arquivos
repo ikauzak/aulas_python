@@ -1,0 +1,25 @@
+#Nesta aula, foi criado um arquivo.txt na raíz para que o Python consiga ler o seu conteúdo.
+
+/ # echo "conteudo" >> arquivo.txt
+/ # 
+/ # cat arquivo.txt 
+conteudo
+
+##Atribuindo a variável "my_file" o arquivo.txt
+>>> my_file = open('arquivo.txt')
+
+##Lendo o arquivo.txt
+>>> my_file.read()
+'conteudo\n'
+
+##O readline acompanha o leitor do python. Como no .read() foi lido o conteúdo inteiro anteriormente, o .readline() vai ler a partir de onde o "cursor" parou.
+>>> my_file.readline()
+''
+>>> 
+
+##Para voltar este curso a posição inicial, é necessário a utilização do .seek(0)
+>>> my_file.seek(0)
+0
+>>> my_file.readline()
+'conteudo\n'
+
