@@ -1,0 +1,10 @@
+FROM alpine:latest
+
+COPY requirements/requirements.prod /tmp
+
+RUN apk add python3 && \
+    apk add curl && \
+    curl https://bootstrap.pypa.io/get-pip.py -o /tmp/get-pip.py && \
+    python3 /tmp/get-pip.py && \
+    pip install --upgrade -r /tmp/requirements.prod && \
+    rm -rf /tmp/*
