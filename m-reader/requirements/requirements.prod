@@ -1,0 +1,14 @@
+attrs==19.1.0
+certifi==2019.3.9
+chardet==3.0.4
+Click==7.0
+configparser==3.7.4
+feedparser==5.2.1
+html2text==2018.1.9
+idna==2.8
+importlib-resources==1.0.2
+reader==0.11
+realpython-reader==1.0.0
+requests==2.22.0
+typing==3.6.6
+urllib3==1.25.3
